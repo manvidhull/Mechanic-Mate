@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  <meta charset="UTF-8">
+  <title>MechanicMate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- custom stylesheets and libraries -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap-margin-padding.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <script>
+      var x = document.getElementById("demo");
+
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+
+      function showPosition(position) {
+        x.innerHTML ="";
+      }
+    </script>
+
+
+    <style>
+      *{
+        overflow-x: hidden;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+      div.transbox {
+        margin: 100px 30px;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+      }
+
+      .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: rgb(29, 62, 224);
+        display: grid;
+        grid-template-columns: auto;
+        background: url("https://img.freepik.com/free-photo/man-try-fix-car-engine-problem-local-road_1150-10664.jpg?size=626&ext=jpg&ga=GA1.1.1094062965.1681918905&semt=ais")
+          no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        font-size: xx-large;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .button:hover {
+        background-color: #555;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body onload="getLocation()">
+
+    <header class="header-style-two">
+      <div class="header-top">
+          <div class="auto-container clearfix">
+
+                  
+              <div class="logo">
+                  <a href="index.html"><img src="img/resources/logo.jpg" alt="Car Door">
+                  </a>
+              </div>
+                  <div class="outer-box clearfix">
+                      <div class="btn-box">
+                      </div>
+                      <nav class="main-menu">
+                          <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                              </button>
+                          </div>
+                          <div class="navbar-collapse collapse clearfix">
+                              <ul class="navigation">
+                                  <li><a href="index.html">Home</a></li>
+                                  <li><a href="about.html">About</a></li>
+                                  <li>
+                                     
+                                      <a href="services.html">Services</a>
+                                  </li>
+                                  <li><a href="contact.html">Contact Us</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  <section class="inner-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 sec-title colored text-center">
+                <h2>Common Issues</h2>
+                <ul class="breadcumb">
+                    <li><a href="demo-2.html">Home</a>
+                    </li>
+                    <li><i class="fa fa-angle-right"></i>
+                    </li>
+                    <li><span>Brief about problem</span>
+                    </li>
+                </ul>
+                <span class="decor"><span class="inner"></span></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-section sec-padding pb-50" data-bg-color="#f7f7f7">
+  <div class="container">
+      <div class="row">
+          <div class="service-content">
+                      <div class="col-md-4 col-sm-6 col-xs-12 mb-30" >
+                          <div class="service-box">
+                              <div class="img-thumb">
+                                  <img class="full-width" src="https://www.drivespark.com/img/2017/12/04-1512395791-common-car-problems-and-solutions-simplified-3.jpg" alt="">
+                                  
+                              </div>
+                              <div class="content">
+                                  <h4 class="title"><a href="#"><strong style="font-weight: 800;
+                                    margin-bottom: 20px;
+                                    margin-top: 0;
+                                    text-align: center;
+                                    text-transform: uppercase;">White Exhaust Smoke</strong></a></h4>
+                                  <p>
+                                    Cause - Coolant or Engine oil is leaking into the combustion
+                                    chamber, due to a faulty gasket.
+                                  </p>
+                                  <p>
+                                    Solution - You can't fix it! Call the service guys, and ensure
+                                    that you don't run the engine too much
+                                  </p>
+                                  <a href="demo-2.html" class="thm-btn flat-btn mr-10">read more <i class="fa fa-arrow-circle-right"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 col-xs-12 mb-30" >
+                        <div class="service-box">
+                            <div class="img-thumb">
+                                <img class="full-width" src="https://www.drivespark.com/img/2017/12/04-1512395799-common-car-problems-and-solutions-simplified-4.jpg" alt="">
+                                
+                            </div>
+                            <div class="content">
+                                <h4 class="title"><a href="#"><strong style="font-weight: 800;
+                                  margin-bottom: 20px;
+                                  margin-top: 0;
+                                  text-align: center;
+                                  text-transform: uppercase;">Odd Fluid Smell</strong></a></h4>
+                                <p>
+                                  Cause - Probably some fluid leak somewhere. Check the floor under
+                                  the car.
+                                </p>
+                                <p>
+                                  Solution - If garage floor stains, possible leakage; drive carefully to local mechanic if leak not severe
+                                </p>
+                                <a href="demo-2.html" class="thm-btn flat-btn mr-10">read more <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 mb-30" >
+                      <div class="service-box">
+                          <div class="img-thumb">
+                              <img class="full-width" src="https://www.drivespark.com/img/2017/12/04-1512395831-common-car-problems-and-solutions-simplified-8.jpg" alt="">
+                              
+                          </div>
+                          <div class="content">
+                              <h4 class="title"><a href="#"><strong style="font-weight: 800;
+                                margin-bottom: 20px;
+                                margin-top: 0;
+                                text-align: center;
+                                text-transform: uppercase;">Car won't start still</strong></a></h4>
+                              <p>Cause - Faulty spark plugs.</p>
+                              <p>
+                                Solution - Unless the engine is placed too far for you to access,
+                                you can replace the old plugs, using deep socket wrenches.
+                              </p>
+                              <a href="demo-2.html" class="thm-btn flat-btn mr-10">read more <i class="fa fa-arrow-circle-right"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-4 col-sm-6 col-xs-12 mb-30" >
+                    <div class="service-box">
+                        <div class="img-thumb">
+                            <img class="full-width" src="https://www.drivespark.com/img/2017/12/04-1512395823-common-car-problems-and-solutions-simplified-7.jpg" alt="">
+                            
+                        </div>
+                        <div class="content">
+                            <h4 class="title"><a href="#"><strong style="font-weight: 800;
+                              margin-bottom: 20px;
+                              margin-top: 0;
+                              text-align: center;
+                              text-transform: uppercase;">Overheating Problem</strong></a></h4>
+                              <p>
+                                Possible causes: low coolant level, coolant leakage, or a faulty thermostat 
+                              </p>
+                              <p>For leaks: seal with temporary sealant (cold engine), add coolant, or call mechanic if needed.
+                              </p>
+                            <a href="demo-2.html" class="thm-btn flat-btn mr-10">read more <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-4 col-sm-6 col-xs-12 mb-30" >
+                  <div class="service-box">
+                      <div class="img-thumb">
+                          <img class="full-width" src="https://www.drivespark.com/img/2017/12/04-1512395847-common-car-problems-and-solutions-simplified-10.jpg" alt="">
+                          
+                      </div>
+                      <div class="content">
+                          <h4 class="title"><a href="#"><strong style="font-weight: 800;
+                            margin-bottom: 20px;
+                            margin-top: 0;
+                            text-align: center;
+                            text-transform: uppercase;">AC not working</strong></a></h4>
+                            <p>Cause - Low refrigerant, or a leaking AC hose.</p>
+                            <p>
+                              Solution - It's better to leave this to people who know what they
+                              are doing, since refrigerants are usually toxic.
+                            </p>
+                          <a href="demo-2.html" class="thm-btn flat-btn mr-10">read more <i class="fa fa-arrow-circle-right"></i></a>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="col-md-4 col-sm-6 col-xs-12 mb-30" >
+                <div class="service-box">
+                    <div class="img-thumb">
+                        <img class="full-width" src="https://www.drivespark.com/img/2017/12/04-1512395783-common-car-problems-and-solutions-simplified-2.jpg" alt="">
+                        
+                    </div>
+                    <div class="content">
+                        <h4 class="title"><a href="#"><strong style="font-weight: 800;
+                          margin-bottom: 20px;
+                          margin-top: 0;
+                          text-align: center;
+                          text-transform: uppercase;">New rattle inside car</strong></a></h4>
+                        
+                          <p>
+                            Cause - You've hit a hump/pothole large enough to shake some parts
+                            loose.
+                          </p>.Locate sound source, apply adhesive if confident in reassembly.
+                            <p>
+                          </p>
+                        <a href="demo-2.html" class="thm-btn flat-btn mr-10">read more <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+ 
+  </body>
+</html>
